@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Weather</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+
+		<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="manifest" href="img/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<div class = "content">
+			<div class="topCont">
+				<img src="img/free-icon-font-marker-3916880.png" width="40">
+				<input type="text" id = "Search" placeholder = "Введите город" value="Санкт-Петербург">
+				<img onclick ="find()" src="img/search.png" class = "searchButt" width="30">
+			</div>
+			<div id = "BackImg">
+				<img src="img/description/free-animated-icon-loading-10282558.gif" width="150">
+			</div>
+			<div class="centCont">
+				<div>
+					<h3 id = "sun">Нет данных</h3>
+					<h1 id = "temp">0°</h1>
+				</div>
+				<div class="mixNmax">
+					<h3 id = "minTemp">Min: 0°</h3>
+					<h3 id = "maxnTemp">Max: 0°</h3>
+				</div>
+			</div>
+			<div class="bottCont">
+				<div class = "bottEl">
+					<img src="img/free-icon-font-water-6854097.png" width="40">
+					<h1 id = "waterMeaning">0%</h1>
+				</div>
+				<div class = "bottEl">
+					<img src="img/free-icon-font-wind-5068889.png" width="40">
+					<h1 id = "windMeaning">0 м/с</h1>
+				</div>
+			</div>
+			<div class = "buttFind">
+				<button onclick="find()">Найти</button>
+			</div>
+		</div>
+		<noscript>Включите js</noscript>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
